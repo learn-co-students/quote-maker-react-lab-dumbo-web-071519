@@ -7,7 +7,7 @@ export default (state = [], action) => {
 
     case "REMOVE_QUOTE":
       const remaingQuotes = state.filter(quote => quote.id !== action.quoteId);
-      return [remaingQuotes];
+      return remaingQuotes;
 
     case "UPVOTE_QUOTE":
       idx = state.findIndex(quote => quote.id === action.quoteId);
