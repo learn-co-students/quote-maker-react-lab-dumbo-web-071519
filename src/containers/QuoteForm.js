@@ -9,7 +9,7 @@ class QuoteForm extends Component {
     content: "",
     author: "",
     quoteId: uuid(),
-    vote: 0
+    votes: 0
   };
 
   handleOnChange = event => {
@@ -30,7 +30,7 @@ class QuoteForm extends Component {
   };
 
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     return (
       <div className="container">
         <div className="row">
